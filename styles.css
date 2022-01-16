@@ -1,0 +1,241 @@
+/* Global Layout Set-up */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: rgb(0, 0, 0);
+  background: #222;
+}
+/* Link Styles */
+
+a {
+  text-decoration: none;
+  color: #999;
+}
+a:hover {
+  color: #ee7e5d;
+}
+.band-link {
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+}
+
+/* Section Styles */
+
+.main-nav {
+  width: 100%;
+  background: black;
+  min-height: 30px;
+  padding: 10px;
+  position: fixed;
+  text-align: center;
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 700;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.nav .name {
+  display: block;
+  margin-right: auto;
+  color: #fdfdfd;
+}
+.name:hover {
+  color: #ee7e5d;
+}
+.nav li {
+  padding: 5px 10px 10px 10px;
+}
+.nav a {
+  transition: all 0.5s;
+}
+.nav a:hover {
+  color: #ee7e5d;
+}
+.main-header {
+  text-align: center;
+  background: url("/NicholasCzarnecki.github.io/images/Philadelphia_Skyline.jpg")
+    no-repeat center;
+  background-size: 1000px;
+  overflow: hidden;
+  padding-top: 60px;
+}
+header {
+  line-height: 1.5;
+}
+header .profile-image {
+  margin-top: 50px;
+  width: auto;
+  height: 200px;
+  border-radius: 20%;
+  border: 3px solid #ee7e5d;
+  transition: all 0.5s;
+}
+header .profile-image:hover {
+  transform: scale(1.2) rotate(360deg);
+}
+.music-header {
+  text-align: center;
+  background-size: 1000px;
+  overflow: hidden;
+  padding-top: 60px;
+  color: #cacdd9;
+}
+.tag {
+  background-color: #00000075;
+  color: #ee7e5d;
+  padding: 10px;
+  border-radius: 5px;
+  display: table;
+  margin: 10px auto;
+}
+.location {
+  background-color: #00000075;
+  color: #ee7e5d;
+  font-weight: 500;
+}
+.card {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 500px;
+  text-align: left;
+  background: #cacdd9;
+  border: 5px solid #222;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+.card:hover {
+  border-color: #ee7e5d;
+}
+.music-card {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 500px;
+  text-align: left;
+  background: #cacdd9;
+  border: 10px solid #222;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+.music-card:hover {
+  border-color: #000;
+}
+
+ul.skills {
+  padding: 0;
+  text-align: center;
+}
+
+.skills li {
+  border-radius: 6px;
+  display: inline-block;
+  background: #ee7e5d;
+  color: white;
+  padding: 5px 10px;
+  margin: 2px;
+}
+
+.skills li:hover {
+  border: 2px solid #222;
+  color: #222;
+}
+
+.skills li:nth-child(odd) {
+  background: #222;
+}
+
+.skills li:hover:nth-child(odd) {
+  border: 2px solid #ee7e5d;
+  color: #ee7e5d;
+}
+
+footer {
+  width: 100%;
+  min-height: 30px;
+  padding: 20px 0 40px 20px;
+}
+
+footer .copyright {
+  color: #ee7e5d;
+  top: -8px;
+  font-size: 0.75em;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+a.social {
+  display: inline-block;
+  text-indent: -9999px;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  transition: all 0.5s;
+}
+a.instagram {
+  background-image: url(images/instagram.png);
+}
+a.github {
+  background-image: url(images/github.png);
+}
+a.linkedin {
+  background-image: url(images/linkedin.png);
+}
+a.social:hover {
+  transform: scale(1.5) rotate(360deg);
+}
+.clearfix {
+  clear: both;
+}
+
+/* Styles for larger screens */
+@media screen and (min-width: 720px) {
+  .flex {
+    display: -ms-flexbox; /* TWEENER - IE 10 */
+    display: flex;
+    max-width: 1200px;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin: 0 auto;
+  }
+
+  header {
+    min-height: 470px;
+  }
+
+  .nav {
+    max-width: 1200px;
+    padding: 0 30px;
+  }
+
+  main {
+    padding-top: 20px;
+  }
+
+  main p {
+    line-height: 1.6em;
+  }
+
+  footer {
+    font-size: 1.3em;
+    max-width: 1200px;
+    margin: 40px auto;
+  }
+}
