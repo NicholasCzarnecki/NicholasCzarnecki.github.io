@@ -71,7 +71,7 @@ a:hover {
 
 .main-header {
   text-align: center;
-  background: url("./images/Philadelphia_Skyline.jpg") no-repeat center;
+  background: url("/images/Philadelphia_Skyline.jpg") no-repeat center;
   background-size: 1000px;
   padding-top: 60px;
 }
